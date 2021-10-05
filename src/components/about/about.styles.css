@@ -1,0 +1,17 @@
+.bg{
+    background-color: #f5f5f5de;
+}
+.text-justify{
+    text-align: justify;
+}
+.underline{
+    width: 70px;
+    height: 4px;
+    background-color: #FE6501;
+    margin: 0 auto;
+    margin-top: 5px
+}
+.profile-pic{
+    border-radius: 8em;
+    border: thin solid #fe6402;
+}

@@ -1,0 +1,10 @@
+.color{
+    color: #fe6501 !important;
+}
+.hover:hover{
+    color: #ffffff !important;
+    background-color: #fe6501 !important;
+}
+.bg{
+    background-color: #f5f5f5de;
+}
