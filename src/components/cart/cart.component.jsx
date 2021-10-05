@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row, Card, Table } from 'react-bootstrap';
+import { Container, Col, Row, Table } from 'react-bootstrap';
 import CustomButton from '../button/button.component'
 import AboutHeader from '../about-header/about-header.component';
 import './cart.styles.css'
@@ -16,22 +16,22 @@ function Cart() {
                                 <Col md={4} className="m-auto mt-0">
                                     <form action="">
                                         <div className="form-group">
-                                            <label for=""> Fullname </label>
+                                            <label htmlFor=""> Fullname </label>
                                             <input className="form-control" type="text" />
                                         </div> <br/>
 
                                         <div className="form-group">
-                                            <label for=""> Delivery Address </label>
-                                            <textarea class="form-control" rows="3" />
+                                            <label htmlFor=""> Delivery Address </label>
+                                            <textarea className="form-control" rows="3" />
                                         </div> <br/>
 
                                         <div className="form-group">
-                                            <label for=""> Email Address </label>
+                                            <label htmlFor=""> Email Address </label>
                                             <input className="form-control" type="email" />
                                         </div> <br/>
 
                                         <div className="form-group">
-                                            <label for=""> Phone </label>
+                                            <label htmlFor=""> Phone </label>
                                             <input className="form-control" type="tel" />
                                         </div>
                                     </form>
@@ -82,16 +82,12 @@ function Cart() {
                                         </tbody>
                                     </Table> 
                                     <div className="form-check mt-4">
-                                        <input className="form-check-input" type="radio" name="delivery" id="payDelivery" value="option1" checked />
-                                        <label className="form-check-label" for="payDelivery">
-                                            Payment On Delivery
-                                        </label>
-                                        </div>
-                                        <div className="form-check mb-4">
-                                        <input className="form-check-input" type="radio" name="online" id="payOnline" value="option2" />
-                                        <label className="form-check-label" for="payOnline">
-                                            Payment Online
-                                        </label>
+                                        <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+                                        <label className="form-check-label" htmlFor="exampleRadios1"> Payment On Delivery </label>
+                                    </div>
+                                    <div className="form-check mb-4">
+                                        <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                                        <label className="form-check-label" htmlFor="exampleRadios2">  Payment Online </label>
                                     </div>
                                     <CustomButton> Order Now </CustomButton>
                                     </Row>

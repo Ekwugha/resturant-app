@@ -53,13 +53,13 @@ class Menu extends Component {
                                             <Card.Header> <h3> Filter </h3> </Card.Header>
                                             <Card.Text className="m-3">
                                             <div className="form-group">
-                                                <label for=""> Keyword </label>
-                                                <input class="form-control" type="text" placeholder="e.g rice" />
+                                                <label htmlFor=""> Keyword </label>
+                                                <input className="form-control" type="text" placeholder="e.g rice" />
                                             </div> <br/>
 
                                             <div className="form-group">
                                                 <label className="text-dark"> Category </label>
-                                                <select class="form-control" id="category">
+                                                <select className="form-control" id="category">
                                                     <option> All </option>
                                                     <option> Rice </option>
                                                     <option> Drinks </option>
@@ -72,7 +72,7 @@ class Menu extends Component {
                                                 <label htmlFor=""> Sort </label>
                                                 <Row>
                                                     <Col md={6}>
-                                                        <select class="form-control" id="category">
+                                                        <select className="form-control" id="category">
                                                             <option> Default </option>
                                                             <option> Title </option>
                                                             <option> Price </option>
@@ -81,7 +81,7 @@ class Menu extends Component {
                                                     </Col>
                                         
                                                     <Col md={6}>
-                                                        <select class="form-control" id="category">
+                                                        <select className="form-control" id="category">
                                                             <option> Ascending </option>
                                                             <option> Descending </option>
                                                         </select>

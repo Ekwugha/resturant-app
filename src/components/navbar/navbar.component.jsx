@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Navbar, Nav, Modal, Button } from 'react-bootstrap';
+import { Container, Navbar, Nav, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { faBars, faShoppingCart, faUser, faInfoCircle, faUtensils, faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -63,7 +63,7 @@ export default function CustomNavbar() {
                 <>
                 <Nav>
                     <>
-                    <Nav.Link onClick={handleShow} className="d-flex align-items-center justify-content-center" className={navbarbrand ? 'color text' : 'color text'} > Login <FontAwesomeIcon icon={faUser} /> 
+                    <Nav.Link onClick={handleShow}  className={navbarbrand ? 'align-items-center justify-content-center color text' : 'align-items-center justify-content-center color text'} > Login <FontAwesomeIcon icon={faUser} /> 
                     
                     {/* login modal */}
                     <Modal show={show} onHide={handleClose}>

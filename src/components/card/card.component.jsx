@@ -1,5 +1,7 @@
 import React from 'react';
-import { Col, Card } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './card.styles.css';
 
 export default function CardBody( {title, id, image, category, price, add} ) {

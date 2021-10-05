@@ -50,19 +50,8 @@
 }
 @media only screen and (max-width: 768px) {
     .navbar .navbar-nav .nav-link::after {
-        /* position: absolute;
-        bottom: 10px;
-        left: 0; */
-        /* top: 1px; */
         bottom: 1px;
         right: 100%;
-        /* margin: auto;
-        background-color: #fe6501;
-        color: transparent;
-        width: 0%;
-        content: '.';
-        height: 3px;
-        transition: all 0.5s; */
     }
 }
 .navbar.active{
