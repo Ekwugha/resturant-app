@@ -43,11 +43,11 @@ class Menu extends Component {
             />
             <AboutHeader> Menu </AboutHeader>
             <section className="py-5">
-                <Container dataaos='fade-up'>
+                <Container dataaos='fade-up' className="box-shadow-full">
                     <Row>
                         <Col className="justify-content-center">
                             <Row>
-                                <Col md={3} className="m-auto mt-0">
+                                <Col lg={3} className="m-auto mt-0">
                                     <form action="">
                                         <Card>
                                             <Card.Header> <h3> Filter </h3> </Card.Header>
@@ -89,18 +89,18 @@ class Menu extends Component {
                                                 </Row>
                                             </div>
                                             </Card.Text>
-                                            <CustomButton> Search </CustomButton>
+                                            <div className="mx-3 mb-2">
+                                                <CustomButton> Search </CustomButton>
+                                            </div>
                                         </Card>
                                     </form>
                                 </Col>
                                 
-                                {/* <Row> */}
-                                    <Col md={9} className="m-auto mt-0">
-                                        <Row>
-                                            <MenuData />
-                                        </Row>
-                                    </Col>
-                                {/* </Row> */}
+                                <Col lg={9} className="m-auto mt-0">
+                                    <Row>
+                                        <MenuData />
+                                    </Row>
+                                </Col>
                             </Row>
                         </Col>
                     </Row>

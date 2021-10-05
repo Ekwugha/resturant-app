@@ -35,7 +35,7 @@
     transition: all 0.5s;
 }
 .navbar .navbar-nav .nav-link:hover::after {
-    width: 100%;
+    width: 75%;
 }
 @media only screen and (min-width: 960px) {
     .navbar .navbar-nav .nav-link {
@@ -46,6 +46,23 @@
     }
     .navbar .navbar-brand {
         padding: 0 0.7em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .navbar .navbar-nav .nav-link::after {
+        /* position: absolute;
+        bottom: 10px;
+        left: 0; */
+        /* top: 1px; */
+        bottom: 1px;
+        right: 100%;
+        /* margin: auto;
+        background-color: #fe6501;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 3px;
+        transition: all 0.5s; */
     }
 }
 .navbar.active{

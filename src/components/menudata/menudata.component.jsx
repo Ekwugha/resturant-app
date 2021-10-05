@@ -1,5 +1,7 @@
 import React from 'react';
 import CardBody from '../card/card.component';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import CustomButton from '../button/button.component';
 
 export class MenuData extends React.Component {
@@ -14,7 +16,7 @@ export class MenuData extends React.Component {
                   image: "assest/meat_pie.jpg",
                   title: 'Meat pie',
                   price: '₦ 250.00',
-                  add: <CustomButton> Add To Cart </CustomButton>
+                  add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 2,
@@ -22,7 +24,7 @@ export class MenuData extends React.Component {
                     image:  "assest/chicken_pie.jpg",
                     title: 'Chicken pie',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 3,
@@ -30,7 +32,7 @@ export class MenuData extends React.Component {
                     image:  "assest/beef_roll.jpg",
                     title: 'Beef roll',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 4,
@@ -38,7 +40,7 @@ export class MenuData extends React.Component {
                     category: 'Snacks',
                     title: 'Doughnut',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 5,
@@ -46,7 +48,7 @@ export class MenuData extends React.Component {
                     image: "assest/scotch_eggs.jpg",
                     title: 'Scotch egg',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 6,
@@ -54,7 +56,7 @@ export class MenuData extends React.Component {
                     image: "assest/buristos.jpg",
                     title: 'Buristos',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 7,
@@ -62,7 +64,7 @@ export class MenuData extends React.Component {
                     image:  "assest/gigi_roll.jpg",
                     title: 'Gigi Roll',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 8,
@@ -70,7 +72,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Triangle cake',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 9,
@@ -78,7 +80,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Hexagon cake',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 10,
@@ -86,7 +88,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 11,
@@ -94,7 +96,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Fried Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 12,
@@ -102,7 +104,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Rice and Stew',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 13,
@@ -110,7 +112,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 14,
@@ -118,7 +120,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 15,
@@ -126,7 +128,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 16,
@@ -134,7 +136,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 17,
@@ -142,7 +144,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 18,
@@ -150,7 +152,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 19,
@@ -158,7 +160,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 20,
@@ -166,7 +168,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 21,
@@ -174,7 +176,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 22,
@@ -182,7 +184,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 23,
@@ -190,7 +192,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
                 {
                     id: 24,
@@ -198,7 +200,7 @@ export class MenuData extends React.Component {
                     image: "assest/cake.jpg",
                     title: 'Jollof Rice',
                     price: '₦ 250.00',
-                    add: <CustomButton> Add To Cart </CustomButton>
+                    add: <CustomButton> Add To Cart <FontAwesomeIcon icon={faShoppingCart}/>  </CustomButton>
                 },
             ]
               
