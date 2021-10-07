@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import CustomButton from '../../components/button/button.component';
+import CustomButton from '../../button/button.component';
 import { Container, Col, Row } from 'react-bootstrap';
 import './order-delivery.styles.css';
 

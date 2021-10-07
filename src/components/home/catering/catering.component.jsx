@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import CustomButton from '../../components/button/button.component';
+import CustomButton from '../../button/button.component';
 
 function Catering() {
     return (

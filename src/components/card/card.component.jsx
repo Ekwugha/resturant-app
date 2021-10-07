@@ -1,22 +1,9 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import './card.styles.css';
 
 export default function CardBody( {title, id, image, category, price, add} ) {
-    // var settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1
-    //   };
     return (
-        // <Slider {...settings}>
-        // {/* return( */}
-        // {/* <React.Fragment> */}
         <Col dataaos='zoom-in' md={6} xl={4} xs={12} className="my-4 mx-auto">
             <div className="card shadow border-0 rounded-0 img img-fluid">
                 <div style={{ 
@@ -38,8 +25,5 @@ export default function CardBody( {title, id, image, category, price, add} ) {
                 </div>
             </div>
         </Col> 
-        // {/* </React.Fragment> */}
-        // {/* ) */}
-        // </Slider>
     );
 }

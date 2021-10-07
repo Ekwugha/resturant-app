@@ -24,13 +24,7 @@
 
 import React, {Component} from 'react';
 import { Col, Image } from 'react-bootstrap';
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import './card.styles.css';
-import '../carousel/style.css'
-
-
+import '../../carousel/style.css'
 
 const Card = (props) => (
     <div className="card">
@@ -55,14 +49,8 @@ const Card = (props) => (
     </div>
   );
 
- class HomeMenu extends React.Component {
-    // var settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1
-    //   };
+class HomeMenu extends React.Component {
+
     render () {
         const cardsData =  [
             { id: 1, category: 'Snacks', image: "assest/meat_pie.jpg", title: 'Meat pie' },
@@ -77,41 +65,11 @@ const Card = (props) => (
         ]
 
         return(
-            <div className="container my-5">
+            <div data-aos='fade-down' className="container my-5">
               <CardContainer cards={ cardsData } />
             </div>
-          );
-
-    // return (
-    //     // <Slider {...settings}>
-    //     // {/* return( */}
-    //     // {/* <React.Fragment> */}
-    //     <Col dataaos='zoom-in' md={6} xl={4} xs={12} className="my-4 mx-auto">
-    //         <div className="card shadow border-0 rounded-0 img img-fluid">
-    //             <div style={{ 
-    //             backgroundImage: `url(${image})`,
-    //             backgroundPosition: 'center',
-    //             backgroundSize: 'cover',
-    //             height: "15rem",
-    //             width:"100%",
-    //             backgroundBlendMode:'darken',
-    //             backgroundColor:"#04040475" 
-    //             }}></div>
-                
-    //             <div className="card-body">
-    //                 <h3 className="lead">{ title }</h3>
-    //                 <div className="d-flex justify-content-between align-itemscenter">
-    //                     <h6 className="my-auto"> {price} </h6>
-    //                     {add}
-    //                 </div>
-    //             </div>
-    //         </div>
-        // </Col> 
-        // {/* </React.Fragment> */}
-        // {/* ) */}
-        // </Slider>
-//     );
-        }
+        );
+    }
 }
 
 export default HomeMenu
