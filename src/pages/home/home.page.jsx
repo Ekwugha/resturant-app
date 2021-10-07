@@ -4,7 +4,6 @@ import HomeMenu from '../../components/homemenu/homemenu.component';
 import Catering from '../../components/catering/catering.component';
 import OrderDelivery from '../../components/order-delivery/order-delivery.component';
 import Footer from '../../components/footer/footer.component';
-// import SimpleSlider from '../../components/carousel/carousel.component'
 
 function HomePage() {
     return (
@@ -12,7 +11,6 @@ function HomePage() {
             <Landingpage />
             <HomeMenu />
             <Catering />
-            {/* <SimpleSlider /> */}
             <OrderDelivery />
             <Footer />
         </div>

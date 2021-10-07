@@ -1,6 +1,7 @@
 import React from 'react';
 import CardBody from '../card/card.component';
 
+
 export class HomeMenuData extends React.Component {
     constructor() {
         super();

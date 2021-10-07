@@ -15,12 +15,10 @@ function OrderDelivery() {
                                 <Col md={6} className="m-auto">
                                     <h1>Don't enjoy standing in line to place your order? <span className="color">Click on the button to get your order ready before you get here</span></h1>
                                     <Link as={Link} to="/menu" className="link"> <CustomButton> Order Food </CustomButton> </Link>
-                                    {/* <CustomButton> Order Food </CustomButton> */}
                                 </Col>
                                 <Col md={6} className="m-auto">
                                     <h1>Don't have time to come over to collect your order? <span className="color">Click on the button below to get your order at your doorstep</span></h1>
                                     <Link as={Link} to="/menu" className="link"> <CustomButton> Delivery </CustomButton> </Link>
-                                    {/* <CustomButton> Delivery </CustomButton> */}
                                 </Col>
                             </Row>
                         </div>
@@ -31,4 +29,4 @@ function OrderDelivery() {
     )
 }
 
-export default OrderDelivery
+export default OrderDelivery;

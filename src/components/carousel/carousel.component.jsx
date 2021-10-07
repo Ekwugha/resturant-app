@@ -1,37 +1,61 @@
-import Slider from "react-slick";
+// import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-import React from "react";
+import React, {Component} from "react";
+import './style.css'
 
 
-export default function SimpleSlider() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
+// export default function SimpleSlider() {
+    const Card = (props) => (
+        <div className="card">
+          <img src={ props.imgUrl } 
+            alt={ props.alt || 'Image' } />
+          <div className="card-content">
+            <h2>{ props.title }</h2>
+            <p>{ props.content }</p>
+          </div>
         </div>
-        <div>
-          <h3>2</h3>
+      );
+      
+      const CardContainer = (props) => (
+        <div className="cards-container">
+          {
+            props.cards.map((card) => (
+              <Card title={ card.title }
+                content={ card.content }
+                imgUrl={ card.imgUrl } />
+            ))
+          }
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
-    );
-  }
+      );
+      
+      class SimpleSlider extends React.Component {
+        render () {
+          const cardsData = [
+            {id: 1, title: 'CARD 1', content: 'Clark Kent', imgUrl: 'https://unsplash.it/200/200'},
+            {id: 2, title: 'CARD 2', content: 'Bruce Wayne', imgUrl: 'https://unsplash.it/201/200'},
+            {id: 3, title: 'CARD 3', content: 'Peter Parker', imgUrl: 'https://unsplash.it/200/201'},
+            {id: 4, title: 'CARD 4', content: 'Tony Stark', imgUrl: 'https://unsplash.it/201/201'},
+            {id: 5, title: 'CARD 5', content: 'Reed Richards', imgUrl: 'https://unsplash.it/202/200'},
+            {id: 6, title: 'CARD 6', content: 'Wade Wilson', imgUrl: 'https://unsplash.it/200/199'},
+            {id: 7, title: 'CARD 7', content: 'Peter Quill', imgUrl: 'https://unsplash.it/199/199'},
+            {id: 8, title: 'CARD 8', content: 'Steven Rogers', imgUrl: 'https://unsplash.it/199/200'},
+            {id: 9, title: 'CARD 9', content: 'Bruce Banner', imgUrl: 'https://unsplash.it/200/198'},
+            {id: 10, title: 'CARD 10', content: 'Vincent Strange', imgUrl: 'https://unsplash.it/198/199'},
+          ]
+          
+          return(
+            <div className="container">
+              <h1 style={{ 'text-align': 'center' }}>
+                React Card Slider
+              </h1>
+              
+              <CardContainer cards={ cardsData } />
+            </div>
+          );
+        }
+      }
+    // );
+//   }
+
+  export default SimpleSlider;

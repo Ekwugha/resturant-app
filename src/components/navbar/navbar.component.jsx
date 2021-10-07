@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Navbar, Nav, Modal } from 'react-bootstrap';
+import { Container, Navbar, Nav, Modal, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { faBars, faShoppingCart, faUser, faInfoCircle, faUtensils, faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +15,7 @@ export default function CustomNavbar() {
     // for modal in login navlink
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
-    const handleClose = () => setShow(false);
+    let handleClose = () => document.querySelector(".modal").classList.add("d-none");
 
 
     const changeBackground = () => {
@@ -60,9 +60,8 @@ export default function CustomNavbar() {
                     <Nav.Link as={Link} to="/menu" onClick={() => setExpanded(false)} className={navbarbrand ? 'color text' : 'color text'} > <FontAwesomeIcon icon={faUtensils} /> Menu </Nav.Link>
                 </Nav>
 
-                <>
+            
                 <Nav>
-                    <>
                     <Nav.Link onClick={handleShow}  className={navbarbrand ? 'align-items-center justify-content-center color text' : 'align-items-center justify-content-center color text'} > Login <FontAwesomeIcon icon={faUser} /> 
                     
                     {/* login modal */}
@@ -80,18 +79,18 @@ export default function CustomNavbar() {
                                     <label htmlFor="password" className="mb-1">Password</label>
                                     <input type="password" className="form-control" id="Password" placeholder="Password" />
                                 </div> <br/>
+                                <Button className="btn btn-sm btn-outline-dark mr-2" variant="secondary" onClick={handleClose}>Close</Button>
                                 <CustomButton type="submit">Submit</CustomButton>
                             </form>
                         </Modal.Body>
                     </Modal> 
     
                     </Nav.Link>
-                    </>
+                   
 
 
                     <Nav.Link as={Link} to="/cart" onClick={() => setExpanded(false)} className={navbarbrand ? 'color text' : 'color text'} > Cart <FontAwesomeIcon icon={faShoppingCart} />  </Nav.Link>
                 </Nav>
-                </>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
