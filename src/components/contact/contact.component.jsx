@@ -19,13 +19,13 @@ function Contact() {
                                 <form name="contact" className="py-3 border-0" data-netlify="true"  id="my-form" >
                                 <Row>
                                     <Col md={6} className="form-group py-2">
-                                        <input type="name" name="name" id="name" class="form-control p" placeholder="Your Name" required />
+                                        <input type="name" name="name" id="name" className="form-control p" placeholder="Your Name" required />
                                     </Col>
                                     <Col md={6} className="form-group py-2">
-                                        <input type="subject"  name="subject" id="subject" class="form-control" placeholder="Subject" required />
+                                        <input type="subject"  name="subject" id="subject" className="form-control" placeholder="Subject" required />
                                     </Col>
                                     <div className="form-group py-2">
-                                        <textarea type="message"  name="message" id="message" cols="120" rows="5" class="form-control" placeholder="Your Message"
+                                        <textarea type="message"  name="message" id="message" cols="120" rows="5" className="form-control" placeholder="Your Message"
                                             required></textarea>
                                     </div>
                                     <CustomButton> Send </CustomButton>
