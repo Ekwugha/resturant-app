@@ -24,7 +24,7 @@ function Contact() {
                                     <Col md={6} className="form-group py-2">
                                         <input type="subject"  name="subject" id="subject" class="form-control" placeholder="Subject" required />
                                     </Col>
-                                    <div class="form-group py-2">
+                                    <div className="form-group py-2">
                                         <textarea type="message"  name="message" id="message" cols="120" rows="5" class="form-control" placeholder="Your Message"
                                             required></textarea>
                                     </div>

@@ -14,6 +14,10 @@
     width: 90%;
     margin: auto;
   } */
+
+  /* .y{
+    background: #eee;
+  } */
   
   .cards-container {
     display: flex;
@@ -37,6 +41,7 @@
     flex: 1 0 250px;
     box-shadow: 0 1px 1rem -4px #000;
     /* background: #fff; */
+    /* background: #eee; */
     margin: 1rem;
     overflow: hidden;
     border-radius: 6px;

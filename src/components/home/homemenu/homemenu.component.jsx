@@ -1,30 +1,6 @@
-// import React from 'react';
-// import { Container, Col, Row } from 'react-bootstrap';
-// // import HomeMenuData from '../homemenudata/homemenudata.component';
-// import CardBody from '../card/card.component'
-
-// function HomeMenu(id, title, image) {
-//     return (
-//         <section className="background">
-//             <Container>
-//                 <Row>
-//                     <Col className="my-5">
-//                         <Row>
-//                             {/* <HomeMenuData /> */}
-//                             <CardBody />
-//                         </Row>
-//                     </Col>
-//                 </Row>
-//             </Container>
-//         </section>
-//     )
-// }
-
-// export default HomeMenu;
-
-import React, {Component} from 'react';
-import { Col, Image } from 'react-bootstrap';
-import '../../carousel/style.css'
+import React from 'react';
+import { Image } from 'react-bootstrap';
+import '../style.css'
 
 const Card = (props) => (
     <div className="card">
@@ -42,6 +18,7 @@ const Card = (props) => (
       {
         props.cards.map((card) => (
           <Card title={ card.title }
+            key={card.id}
             content={ card.content }
             image={ card.image } />
         ))
@@ -65,7 +42,7 @@ class HomeMenu extends React.Component {
         ]
 
         return(
-            <div data-aos='fade-down' className="container my-5">
+            <div data-aos='fade-down' className="y container my-5">
               <CardContainer cards={ cardsData } />
             </div>
         );
