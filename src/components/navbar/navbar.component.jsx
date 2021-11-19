@@ -80,7 +80,7 @@ export default function CustomNavbar() {
                                     <input type="password" className="form-control" id="Password" placeholder="Password" />
                                 </div> <br/>
                                 <Button className="btn btn-sm btn-outline-dark mr-2" variant="secondary" onClick={handleClose}>Close</Button>
-                                <CustomButton type="submit">Submit</CustomButton>
+                                <Link as={Link} to="/order" className="link"> <CustomButton>Submit</CustomButton> </Link>
                             </form>
                         </Modal.Body>
                     </Modal> 

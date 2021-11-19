@@ -7,7 +7,7 @@ const Card = (props) => (
       <Image src={ props.image } 
          alt={ props.alt || 'Image' } /> 
       <div className="card-content">
-        <h2>{ props.title }</h2>
+        <h5>{ props.title }</h5>
         <p>{ props.content }</p>
       </div>
     </div>
@@ -42,7 +42,7 @@ class HomeMenu extends React.Component {
         ]
 
         return(
-            <div data-aos='fade-down' className="y container my-5">
+            <div data-aos='fade-down' className="container my-5">
               <CardContainer cards={ cardsData } />
             </div>
         );

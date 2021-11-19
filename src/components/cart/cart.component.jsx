@@ -85,8 +85,12 @@ function Cart() {
                                         <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
                                         <label className="form-check-label" htmlFor="exampleRadios1"> Payment On Delivery </label>
                                     </div>
-                                    <div className="form-check mb-4">
+                                    <div className="form-check">
                                         <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                                        <label className="form-check-label" htmlFor="exampleRadios1"> Payment On Order </label>
+                                    </div>
+                                    <div className="form-check mb-4">
+                                        <input className="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" />
                                         <label className="form-check-label" htmlFor="exampleRadios2">  Payment Online </label>
                                     </div>
                                     <CustomButton> Order Now </CustomButton>
